@@ -1,0 +1,1243 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media (min-width: 360px) and (max-width: 767px){
+  .all {
+    width: 100%;
+  }
+  .header {
+    background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/banner-mobile.jpg);
+    padding: 30px 15px 30px; 
+     width: 100%;
+     height: 100vh ;
+     position: relative;
+  }
+  .menu {
+    visibility: hidden;
+  }
+
+  .menu_burger {
+
+   position: absolute;
+   right: 20px;
+   top: 20px;
+  }
+
+  .header_logo, .container_logo_menu { 
+    width: 270px;
+  }
+  .container_logo_menu {
+    margin-top: 200px;
+  }
+
+  .header_title {
+    font-size: 26px;
+    line-height: 1.385;
+    margin: 40px 40px 0;
+    text-align: center;
+    min-width: 275px;  
+  }
+  
+  .trends {
+    
+    width: 100%;
+    
+    margin-top: 40px;
+  }
+  .trend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .trend_card {
+    /*width: 360px;*/
+  
+    /*min-height: 100%;*/
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .page {
+   width: 100%;
+   padding: 0 15px 0;
+   margin-top:  50px;
+   flex-direction: column;
+   align-items: center;    
+  }
+
+  .main_cards {
+    width: 100%;
+  }
+
+  .card { 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+   /* width: 325px;*/
+   width: 100%;
+  }
+  .card::after {
+    content: "";
+    background: rgb(238, 238, 238);
+    opacity: 0.4; 
+    display: block;
+    margin: 20px auto 34px;
+    /*width: 325px;*/
+    width: 100%;
+    height: 4px;
+  }
+
+  .card_preview, .card_img {
+    width: 100%;
+  }
+
+  .card_text {
+    width: 100%;
+  }
+
+  .card_name {
+    padding-top: 8px;
+  }
+
+  .card_link {
+    font-size: 16px;
+  }
+  
+  .sidebar {
+    width: 100%;
+  }
+
+  .news, .mailing, .tags, .topics {
+   max-width: 380px;
+   margin: 0 auto 53px;
+  }
+
+  .products {
+    padding: 0 10px 0;
+    width: 100%;
+  } 
+
+  .products_title_link {
+    font-size: 16px;
+  }
+
+  .product {
+    flex-direction: column;
+    margin-top: 25px;
+  }
+
+  .product_card {
+    /*width: 335px;*/
+    margin-bottom: 30px; 
+  }
+ 
+  .product_img {
+    width: 280px;
+    margin-bottom: -30px;
+    background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/shop-item-mobile1.jpg);
+  }
+
+  .product_body {
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+    /*height: 215px;*/
+    flex-grow: 1;
+    padding: 50px 20px 25px;
+  }
+
+  .product_link {
+    font-size: 17px;
+  }
+  
+  ._footer {
+  width: calc(100% - 30px);
+  margin: 40px 15px 50px;
+  }  
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .all {
+  width: 100%;
+  }
+  
+  .header {
+     background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/banner-bg-tablet.jpg);
+    width: 100%;
+   padding: 0;
+    position: relative;
+  }
+
+  .menu_burger {
+    position: absolute;
+    right: 35px;
+    top: 50px;
+  }
+
+ .header_logo {
+    width: 158px;
+    position: absolute;
+    left: 35px;
+    top: 50px;
+  }
+  
+  .container_logo_menu {
+    width: 158px;
+    /*padding: 45px 35px;   */
+    margin: 0;
+  }
+  
+  .menu {
+    visibility: hidden;
+  }
+  
+  .header_title {
+    font-size: 40px;
+    line-height: 1.375;
+    margin: 100px 80px 20px; 
+    min-width: 605px;
+    max-width: 1030px;
+    text-align: center;
+  }
+
+
+  .trends {
+    width: 100%;
+    margin-top: 50px;
+   }
+  
+  .trend_card {
+    width: 48%;
+    margin: 0 4% 4% 0;
+  }
+
+  .trend_card:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .trend {
+    flex-wrap: wrap;
+  }
+
+  .page {
+    width: 100%;
+    padding: 0 35px 0;
+    margin-top:  50px;
+    justify-content: space-between;
+  }
+
+  .main_cards {
+    width: 48%;
+    margin-right: 4%;
+  }
+
+  .card { 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 52px;
+    width: 100%;
+  }
+
+  .card_preview, .card_img{
+   width: 100%;
+  }
+
+  .card_text {
+    width: 100%;
+  }
+
+   .card_name {
+    padding-top: 8px;
+  }
+
+  .card_link {
+    font-size: 17px;
+  }
+  
+  .sidebar {
+    width: 48%;
+  }
+
+  .news, .mailing, .tags, .topics {
+    width: 100%;
+    margin: 0 0 53px;
+  }
+
+  .products {
+    padding: 0 35px 0;
+    width: 100%;
+  } 
+
+  .products_title_link {
+    font-size: 18px;
+  }
+
+  .product {
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 28px;
+    justify-content: space-between;
+  }
+
+  .product_card {
+    margin-bottom: 30px; 
+  }
+ 
+  .product_img {
+    width: 290px;
+    margin-bottom: -35px;
+    background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/shop-item-tablet1.jpg);
+  }
+
+  .product_body {
+    width: 335px;
+     padding: 60px 20px 5px;
+  }
+
+  .product_link {
+    font-size: 17px;
+  }
+
+  ._footer {
+    width: calc(100% - 70px);
+    padding: 0 15px;
+    margin: 65px 35px 40px;
+  } 
+}
+
+@media (min-width: 1200px) {
+  .header {
+    width: 100%;
+    background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/banner-bg.jpg);
+    padding: 28px 248px 124px; 
+    position: relative;
+  }
+ 
+  .header_logo {
+    width: 179px;
+    position: absolute;
+    left: 240px;
+    top: 35px;
+  }
+
+  .menu {
+    position: absolute;
+    right: 240px;
+    top: 45px;
+  }
+
+  .menu_list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .menu_list_item:nth-child(n+2) {
+   margin-left: 35px;  
+  }
+
+  .menu_link {
+    text-decoration: none;
+    font-size: 13px;
+    font-family: OpenSans-Regular, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+  }
+
+  .menu_burger {
+    visibility: hidden;
+  }
+
+  .header_title {
+    font-size: 45px;
+    line-height: 1.667;
+    text-align: center;
+    margin: 100px auto 0; 
+    max-width: 680px;
+    }
+  
+  .trends {
+    width: 100%;
+    margin-top: 64px;
+  } 
+
+ .trend {
+    width: 100%;
+  }
+
+  .trend_card {
+    width: 24%;
+    margin-right: calc(4/3);
+  }
+
+  .trend_card:nth-child(4n) {
+   margin-right: 0;
+  }
+  
+  .page {
+    width: 100%;
+    padding: 0 15%;
+    margin-top:  64px;
+    justify-content: space-between;
+  }
+
+  .main_cards {
+    width: 65%;
+    margin-right: 5%;
+  }
+
+  .card { 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+  }
+
+  .card_preview, .card_img{
+    width: 100%;
+    margin-right: 2%;
+  }
+
+  .card_text {
+    width:100%;
+  }
+
+  .card_link {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  
+  .sidebar {
+    width: 30%;
+  }
+
+  .news, .mailing, .tags, .topics {
+   max-width: 380px;
+   margin: 0 auto 53px;
+  }
+
+  .product {
+    justify-content: space-between; 
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+  
+  .products {
+    width: 100%;
+    /*justify-content: space-between;*/
+    margin-top: 64px;
+  } 
+  
+  .products_title_link {
+    font-size: 20px;
+  }
+
+  .product_img {
+    width: 300px;
+    margin-bottom: -30px;
+    background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/shop-item-desk1.jpg);
+  }
+  
+  .product_body {
+    width: 345px;
+    padding: 50px 20px 25px;
+  }
+
+  .product_link {
+    font-size: 20px;
+  }
+
+  ._footer {
+  width: calc(100% - 30%);
+  margin: 65px 15% 40px;
+  }
+}
+
+/*==========   ОСНОВНАЯ ЧАСТЬ  ===================*/
+
+
+.all {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ /*flex-grow: 1;*/
+ /*align-self: stretch;*/
+}
+
+.header::after {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  opacity: 0.6;
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.container_logo_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_burger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.burger_bar {
+  background-color: #fff ;  
+  border-radius: 20%;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+}
+
+.header_title {
+  text-transform: uppercase;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.trends {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+.trends_title_link {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  font-size: 20px;
+  color: rgb(22, 21, 22);
+  text-transform: uppercase;
+  text-align: center;  
+}
+
+.trends_title_link::after {
+  content: "";
+  background: rgb(174, 158, 95);
+  opacity: 0.4; 
+  display: block;
+  margin: 10px auto 24px;
+  width: 65px;
+  height: 3px;
+}
+
+.trend{
+  display: flex;
+  justify-content: space-between;
+}
+
+.trend_card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.trend_card::after {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  opacity: 0.6;
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.trend1 {
+  background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/trend1.jpg);
+}
+
+.trend2 {
+  background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/trend2.jpg);
+}
+
+.trend3 {
+  background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/trend3.jpg);
+}
+
+.trend4 {
+  background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/trend4.jpg);
+}
+
+.trend_content {
+  border: 2px solid rgb(174, 158, 95);
+  padding: 40px 30px;
+  margin: auto 15px 20px;
+}
+
+.trend_paragraf {
+  font-size: 20px;
+  /*line-height: 1.467;*/
+  color: #ffffff;
+  font-family: OpenSans-Regular, Arial, sans-serif;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.trend_menu_link {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  color: rgb(174, 158, 95);
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.trend_menu_list{
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding: 0px;
+ /* line-height: 1.2;*/
+}
+
+.page {
+  display: flex;
+  align-self: center;
+}
+
+.card:last-child, .news_card:last-child {
+  margin-bottom: 0;
+}
+
+.menu_card_link {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  color: rgb(174, 158, 95);
+  text-transform: uppercase;
+  padding: 0 20px 15px 0;
+}
+
+.menu_card_list{
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+ /* line-height: 1.2;*/
+}
+
+.card_name {
+  padding-top: 8px;
+}
+
+.card_link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  color: rgb(22, 21, 22);
+  text-align: left;
+}
+
+.card_link:hover, .news_card_link:hover,  .topic:hover {
+  color: rgb(174, 158, 95);
+}
+
+.card_inf {
+  padding-top: 25px;
+}
+
+.card_date {
+  font-size: 12px;
+  font-family: OpenSans-Regular, Arial, sans-serif;
+  color: rgb(136, 136, 136);
+}
+
+.card_author {
+  font-size: 12px;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  margin-left: 11px;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+}
+
+.card_author+.second_word {
+  font-size: 12px;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  text-transform: lowercase;
+  color: rgb(0, 0, 0);
+}
+
+.card_content {
+  padding-top: 46px;
+  font-size: 15px;
+  line-height: 1.467;
+  font-family: OpenSans-Regular, Arial, sans-serif;
+}
+
+.paragraf {
+  padding-bottom: 11px;
+}
+
+.news_title_link, 
+.mailing_title_link, 
+.tags_title_link, 
+.topic_title_link {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  font-size: 14px;
+  color: rgb(22, 21, 22);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.news_title_link::after, .mailing_title_link::after, .tags_title_link::after, .topic_title_link::after {
+  content: "";
+  background: rgb(174, 158, 95);
+  opacity: 0.4; 
+  display: block;
+  margin: 10px auto 24px;
+  width: 65px;
+  height: 3px;
+}
+
+.news_card {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  margin: 0 auto 19px;
+}
+
+.news_preview {
+  margin-right: 8%;
+}
+
+.news_img {
+  display: block;
+  min-width: 100%;
+}
+
+.news_card_header {
+  width: 100%;
+}
+
+.news_card_date {
+  font-size: 12px;
+  font-family: OpenSans-Regular, Arial, sans-serif;
+  color: rgb(136, 136, 136); 
+}
+
+.news_card_link {
+  text-decoration: none;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 55px auto;
+}
+
+.search_button {
+  width: 48px;
+  height: 48px; 
+  background-color: rgb(174, 158, 95);
+  border: none;
+}
+
+.search_button:hover, 
+.mailing_button:hover {
+  cursor: pointer;
+  background-color: rgb(53, 53, 53);
+}
+
+.search_button:focus,  
+.mailing_button:focus {
+  outline: 2px solid rgb(174, 158, 95);
+  outline-offset: 3px;
+}
+
+.search_field:focus, 
+.mailing_field:focus {
+  outline: 2px solid rgb(174, 158, 95);
+}
+
+.search_img {
+  width: 18px;
+  height: 18px;
+ }
+.search-group {
+   width: 100%;
+}
+.search_field, 
+.mailing_field {
+  padding: 13px 10px 17px 10px;
+  width: 100%;
+  background-color: rgb(245, 247, 246);
+  border: none;
+  font-size: 13px;
+  color: rgb(117, 117, 117);
+  font-family: OpenSans-Regular, Arial, sans-serif;
+}
+ 
+.mailing_field {
+  margin-bottom: 20px;
+}
+
+.mailing_button {
+  background-color: rgb(174, 158, 95);
+  width: 100%;
+  padding: 17px 5px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  border: none;
+}
+
+
+.tag {
+  height: 34px;
+  font-size: 12px;
+  color: rgb(22, 21, 22);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 3px 13px;
+  border: 3px solid rgb(237, 237, 237);
+  font-family: OpenSans-Bold, Arial, sans-serif;
+}
+
+.tags_list_item { 
+  margin: 5px 3px 12px 0;
+}
+
+.tags_list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topic_list {
+ list-style-type: none;
+ width: 100%;
+}
+
+.topic_list_item{
+  height: 31px;
+  border-bottom: 2px solid rgb(237, 237, 237);
+  margin-bottom: 16px;
+}
+
+.topic {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  text-transform:lowercase;
+  text-decoration: none;  
+} 
+
+.topic_list_item::first-letter {
+  text-transform: uppercase;
+}
+
+.upper_index {
+  color: rgb(174, 158, 95);
+  vertical-align: super;
+  font-size: 10px;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+} 
+
+.products_title_link {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  color: rgb(22, 21, 22);
+  text-transform: uppercase;
+  text-align: center;  
+}
+
+.products_title_link::after {
+  content: "";
+  background: rgb(174, 158, 95);
+  opacity: 0.4; 
+  display: block;
+  margin: 10px auto 24px;
+  width: 65px;
+  height: 3px;
+}
+
+.product{
+  display: flex;
+}
+
+.product_img {
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.product_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product_body {
+  border: 2px solid rgb(174, 158, 95);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product_title {
+  margin: 0px;
+}
+
+.product_link {
+  text-decoration: none;
+  font-family: OpenSans-Regular, Arial, sans-serif;
+  color: rgb(22, 21, 22);
+  text-transform: uppercase;
+}
+
+.product_descr {
+  font-size: 15px;
+  font-family: OpenSans-Regular, Arial, sans-serif;
+  margin: 15px 0 0 ; 
+}
+
+.content_link {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: OpenSans-Regular, Arial, sans-serif;
+  color: rgb(174, 158, 95);
+}
+
+.product_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+
+.product_price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-left;
+}
+
+.product_price_old {
+  font-size: 14px;
+  font-family: OpenSans-Regular, Arial, sans-serif;
+  color: rgb(15, 13, 14);
+  font-weight: bold;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+
+.product_price_new {
+  font-size: 20px;
+  font-family: OpenSans-Regular, Arial, sans-serif;
+  color: rgb(15, 13, 14);
+  font-weight: bold;
+  text-transform: uppercase;
+ }
+
+.product_button {
+  font-size: 14px;
+  font-family: OpenSans-Regular, Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  background-color: rgb(181, 159, 91);
+  width: 141px;
+  height: 49px;
+}
+
+.footer_list {
+  background-color: rgb(245, 247, 246);
+  margin: 0 auto 73px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_list_item {
+  padding: 30px 14px; 
+}
+
+.footer_link {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.footer_link_twitter {
+  background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/svg/004-twitter.svg);
+}
+
+.footer_link_pinterest {
+   background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/svg/001-pinterest.svg);
+}
+
+.footer_link_facebook {
+   background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/svg/002-facebook-logo.svg);
+}
+
+.footer_link_instagram {
+  background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/svg/005-instagram.svg);
+}
+
+.footer_link_tumblr {
+   background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/svg/003-tumblr.svg);
+}
+
+.copyright {
+  display: flex;
+  font-size: 12px;
+  color: rgb(152, 152, 152);
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  justify-content: center;
+}
+
+.copyright_link {
+   text-decoration: none;
+}
+
+/*
+.container_popap {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.6;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+
+.popap {
+  z-index: 1;
+  width: 390px;
+
+  background: #fff;
+  position: relative;
+  text-color: black;
+}
+.form {
+  margin: 55px 30px;
+}
+
+.popap_title_link {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  font-size: 20px;
+  color: rgb(22, 21, 22);
+  text-transform: uppercase;
+  text-align: center;  
+}
+.popap_title_link::after {
+  content: "";
+  background: rgb(174, 158, 95);
+  opacity: 0.4; 
+  display: block;
+  margin: 10px auto 24px;
+  width: 65px;
+  height: 3px;
+}
+.select_hint {
+  font-size: 13px;
+  font-family: "OpenSans";
+  color: rgb(0, 0, 0);
+ 
+  text-align: left;
+ 
+}
+.select {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 25px;
+  margin: 12px 0 0;
+  border: none;
+  background-color: rgb(245, 247, 246);
+  font-size: 14px;
+  font-family: Arial,sans-serif;
+  color: #333333;
+  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(https://netology-code.github.io/html-2-homeworks/form-elements/city-select/img/select-arrows.svg);
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+}
+
+.select:hover {
+  border-bottom: 1px solid rgb(174, 158, 95);
+ 
+}
+.radio-choice {
+  margin-top: 35px;
+}
+.radio-hint {
+  font-size: 13px;
+  font-family: "OpenSans";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+
+}
+.radio_group {
+  
+}
+.radio_ch {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px) 
+}
+.radio-group-text {
+  margin-top: 30px;
+  font-size: 13px;
+  font-family: "OpenSans";
+  color: rgb(0, 0, 0);
+  text-align: left;  
+}
+.radio-group-text::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px; 
+  background-image: url(https://netology-code.github.io/html-2-homeworks/form-elements/city-select/img/checkbox-unchecked.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+ } 
+.radio_ch:checked ~ .radio-group-text::before {
+  background-image: url(https://netology-code.github.io/html-2-homeworks/form-elements/city-select/img/checkbox-checked.svg);
+ }
+.textarea {
+  margin-top: 40px;
+}
+.textarea-hint {
+  font-size: 13px;
+  font-family: "OpenSans";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+}
+.field_textarea {
+  width: 100%;
+  min-height: 130px;
+  max-height: 200px;
+  background-color: rgb(245, 247, 246);
+  border: none;
+  margin-top: 10px;
+
+}
+.field_textarea::placeholder {
+  font-size: 13px;
+  font-family: "OpenSans";
+
+  line-height: 1.2;
+    text-color: black;
+}
+
+
+
+
+
+.popap_button{
+  background-color: rgb(174, 158, 95);
+  width: 100%;
+  height: 45px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  border: none;
+  margin-top: 30px;
+}
+
+.popap_button:hover {
+ background-color: rgb(50, 50, 50);
+ cursor: pointer;
+}
+.popap_button:focus {
+  background-color: black;
+}
+*/
+
+
+.hidden {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px; 
+	width: 1px; 
+}
