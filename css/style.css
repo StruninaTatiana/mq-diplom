@@ -23,7 +23,7 @@
     width: 100%;
   }
   .header {
-    background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/banner-mobile.jpg);
+    background-image: url(../images/banner-mobile.jpg);
     padding: 30px 15px 30px; 
      width: 100%;
      height: 100vh ;
@@ -151,7 +151,6 @@
   .product_img {
     width: 280px;
     margin-bottom: -30px;
-    background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/shop-item-mobile1.jpg);
   }
 
   .product_body {
@@ -179,7 +178,7 @@
   }
   
   .header {
-     background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/banner-bg-tablet.jpg);
+     background-image: url(../images/banner-bg-tablet.jpg);
     width: 100%;
    padding: 0;
     position: relative;
@@ -303,7 +302,6 @@
   .product_img {
     width: 290px;
     margin-bottom: -35px;
-    background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/shop-item-tablet1.jpg);
   }
 
   .product_body {
@@ -325,7 +323,7 @@
 @media (min-width: 1200px) {
   .header {
     width: 100%;
-    background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/banner-bg.jpg);
+    background-image: url(../images/banner-bg.jpg);
     padding: 28px 248px 124px; 
     position: relative;
   }
@@ -439,8 +437,8 @@
   
   .products {
     width: 100%;
-    /*justify-content: space-between;*/
     margin-top: 64px;
+
   } 
   
   .products_title_link {
@@ -450,7 +448,6 @@
   .product_img {
     width: 300px;
     margin-bottom: -30px;
-    background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/shop-item-desk1.jpg);
   }
   
   .product_body {
@@ -588,19 +585,19 @@
 }
 
 .trend1 {
-  background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/trend1.jpg);
+  background-image: url(../images/trend1.jpg);
 }
 
 .trend2 {
-  background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/trend2.jpg);
+  background-image: url(../images/trend2.jpg);
 }
 
 .trend3 {
-  background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/trend3.jpg);
+  background-image: url(../images/trend3.jpg);
 }
 
 .trend4 {
-  background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/images/trend4.jpg);
+  background-image: url(../images/trend4.jpg);
 }
 
 .trend_content {
@@ -1028,23 +1025,23 @@
 }
 
 .footer_link_twitter {
-  background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/svg/004-twitter.svg);
+  background-image: url(../svg/004-twitter.svg);
 }
 
 .footer_link_pinterest {
-   background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/svg/001-pinterest.svg);
+   background-image: url(../svg/001-pinterest.svg);
 }
 
 .footer_link_facebook {
-   background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/svg/002-facebook-logo.svg);
+   background-image: url(../svg/002-facebook-logo.svg);
 }
 
 .footer_link_instagram {
-  background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/svg/005-instagram.svg);
+  background-image: url(../svg/005-instagram.svg);
 }
 
 .footer_link_tumblr {
-   background-image: url(C:/Users/RAJAVI/Desktop/mq-Diplom/svg/003-tumblr.svg);
+   background-image: url(../svg/003-tumblr.svg);
 }
 
 .copyright {
