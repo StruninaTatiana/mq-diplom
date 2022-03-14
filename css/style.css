@@ -6,14 +6,18 @@
 
 @font-face {
   font-family: OpenSans-Regular;
-  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+  src: url(/OpenSans-Regular),
+       url(/OpenSans-Regular.woff),
+       url(/OpenSans-Regular.woff2);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: OpenSans-Bold;
-  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+  src: url(/OpenSans-Bold),
+       url(/OpenSans-Bold.woff),
+       url(/OpenSans-Bold.woff2);
   font-weight: 700;
   font-style: normal;
 }
@@ -56,16 +60,16 @@
   }
   
   .trends {
-    
     width: 100%;
-    
     margin-top: 40px;
   }
+
   .trend {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .trend_card {
     /*width: 360px;*/
   
@@ -149,7 +153,8 @@
   }
  
   .product_img {
-    width: 280px;
+    width: 284px;
+    height:  284px;
     margin-bottom: -30px;
   }
 
@@ -210,9 +215,8 @@
   .header_title {
     font-size: 40px;
     line-height: 1.375;
-    margin: 100px 80px 20px; 
-    min-width: 605px;
-    max-width: 1030px;
+    margin: 100px auto 20px; 
+    width: 650px;
     text-align: center;
   }
 
@@ -301,6 +305,7 @@
  
   .product_img {
     width: 290px;
+
     margin-bottom: -35px;
   }
 
@@ -321,24 +326,23 @@
 }
 
 @media (min-width: 1200px) {
+  
   .header {
     width: 100%;
     background-image: url(../images/banner-bg.jpg);
-    padding: 28px 248px 124px; 
-    position: relative;
-  }
- 
-  .header_logo {
-    width: 179px;
-    position: absolute;
-    left: 240px;
-    top: 35px;
+    padding-top: 28px; 
+    padding-bottom: 124px;
   }
 
-  .menu {
-    position: absolute;
-    right: 240px;
-    top: 45px;
+  .container_logo_menu {
+    width: 1200px;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .header_logo {
+    width: 179px;
   }
 
   .menu_list {
@@ -347,7 +351,7 @@
   }
 
   .menu_list_item:nth-child(n+2) {
-   margin-left: 35px;  
+    margin-left: 35px;  
   }
 
   .menu_link {
@@ -381,23 +385,17 @@
 
   .trend_card {
     width: 24%;
-    margin-right: calc(4/3);
-  }
-
-  .trend_card:nth-child(4n) {
-   margin-right: 0;
   }
   
   .page {
-    width: 100%;
-    padding: 0 15%;
-    margin-top:  64px;
+    width: 1200px;
+    padding: 0 15px 0;
+    margin: 64px auto 0;
     justify-content: space-between;
   }
 
   .main_cards {
-    width: 65%;
-    margin-right: 5%;
+    width: 780px;
   }
 
   .card { 
@@ -421,7 +419,7 @@
   }
   
   .sidebar {
-    width: 30%;
+    width: 272px;
   }
 
   .news, .mailing, .tags, .topics {
@@ -431,14 +429,12 @@
 
   .product {
     justify-content: space-between; 
-    margin-right: 15%;
-    margin-left: 15%;
   }
   
   .products {
-    width: 100%;
-    margin-top: 64px;
-
+    width: 1200px;
+    margin: 64px auto 0;
+    padding: 0 15px;
   } 
   
   .products_title_link {
@@ -447,6 +443,7 @@
 
   .product_img {
     width: 300px;
+    height:  203px;
     margin-bottom: -30px;
   }
   
@@ -460,8 +457,9 @@
   }
 
   ._footer {
-  width: calc(100% - 30%);
-  margin: 65px 15% 40px;
+    width: 1200px;
+    margin: 64px auto 40px;
+    padding: 0 15px;
   }
 }
 
@@ -526,6 +524,8 @@
   text-transform: uppercase;
   font-family: OpenSans-Bold, Arial, sans-serif;
   color: rgb(255, 255, 255);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .trends {
@@ -603,14 +603,15 @@
 .trend_content {
   border: 2px solid rgb(174, 158, 95);
   padding: 40px 30px;
-  margin: auto 15px 20px;
+  margin: 20px 15px;
 }
 
 .trend_paragraf {
   font-size: 20px;
+  text-decoration: none;
   /*line-height: 1.467;*/
   color: #ffffff;
-  font-family: OpenSans-Regular, Arial, sans-serif;
+  font-family: OpenSans-Bold, Arial, sans-serif;
   text-transform: uppercase;
   margin: 0px;
 }
@@ -915,12 +916,7 @@
 }
 
 .product_img {
-  background-color: rgb(0, 0, 0);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-  z-index: -1;
+  overflow: hidden;
 }
 
 .product_card {
@@ -975,26 +971,23 @@
 
 .product_price_old {
   font-size: 14px;
-  font-family: OpenSans-Regular, Arial, sans-serif;
+  font-family: OpenSans-Bold, Arial, sans-serif;
   color: rgb(15, 13, 14);
-  font-weight: bold;
   text-decoration: line-through;
   text-transform: uppercase;
 }
 
 .product_price_new {
   font-size: 20px;
-  font-family: OpenSans-Regular, Arial, sans-serif;
+  font-family: OpenSans-Bold, Arial, sans-serif;
   color: rgb(15, 13, 14);
-  font-weight: bold;
   text-transform: uppercase;
  }
 
 .product_button {
   font-size: 14px;
-  font-family: OpenSans-Regular, Arial, sans-serif;
+  font-family: OpenSans-Bold, Arial, sans-serif;
   color: rgb(255, 255, 255);
-  font-weight: bold;
   text-transform: uppercase;
   border: none;
   background-color: rgb(181, 159, 91);
