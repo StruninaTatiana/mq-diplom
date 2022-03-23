@@ -1333,7 +1333,7 @@
 }
 
 .container_popap{
- /* visibility: hidden;*/
+  visibility: hidden;
   background: rgba(0, 0, 0, 0.6);;
   position: fixed;
   display: flex;
