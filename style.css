@@ -341,6 +341,7 @@
     min-height: 390px;
     padding: 0;
     position: relative;
+    padding-bottom: 20px;
   }
 
   .menu_burger {
@@ -363,7 +364,7 @@
   .header_title {
     font-size: 40px;
     line-height: 1.375;
-    margin: 65px auto 20px; 
+    margin-top: 65px; 
     width: 630px;
     text-align: center;
   }
