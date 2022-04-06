@@ -1088,8 +1088,8 @@
  }
 
 .search-group {
- /*width: calc(100% - 72px);*/
-  width: calc(100% - 48px);
+  width: calc(100% - 72px);
+  /*width: calc(100% - 48px);*/
  /*flex-grow: 1;*/
 }
 
