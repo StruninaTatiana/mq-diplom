@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 @font-face {
   font-family: OpenSans-Regular;
   src: url(../fonts/OpenSans-Regular),
@@ -66,7 +67,7 @@
   }
 
   .menu {
-    visibility: hidden;
+    display: none;
   }
 
   .menu_burger {
@@ -88,11 +89,11 @@
     line-height: 1.385;
     margin: 10px 40px 0;
     text-align: center;
-    min-width: 275px;  
+   /* min-width: 275px;  */
   }
   
   .trends {
-    width: 100%;
+    max-width: 100%;
     margin-top: 40px;
   }
 
@@ -143,7 +144,7 @@
   }
 
   .card_preview, .card_img {
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 3px;
   }
 
@@ -175,12 +176,12 @@
   }
 
   .news, .mailing, .tags, .topics {
-   max-width: 100%;
+   width: 100%;
    margin: 0 auto 44px;
   }
 
   .news_preview {
-    width:25% 
+    width: 25% 
   }
   
   .news_img {
@@ -193,7 +194,7 @@
   }
 
   .news_card_header {
-    width: calc(100% - 20% - 20px);
+    width: calc(100% - 25% - 19px);
   }
 
   .products {
@@ -228,10 +229,7 @@
   }
 
   .product_body {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    flex-grow: 1;
     padding: 50px 20px 25px;
   }
 
@@ -765,9 +763,9 @@
     margin: 0 auto 73px;
   }
 }
-
+/*==============================================================================================*/
 .all {
-  width: 100%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -1058,13 +1056,11 @@
 .search {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
   margin: 55px auto;
 }
 
 .search_button {
   width: 48px;
-  height: 48px; 
   background-color: rgb(174, 158, 95);
   border: none;
 }
@@ -1092,11 +1088,12 @@
  }
 
 .search-group {
-   width: 100%;
+ /*width: calc(100% - 72px);*/
+  width: calc(100% - 48px);
+ /*flex-grow: 1;*/
 }
 
-.search_field, 
-.mailing_field {
+.search_field {
   padding: 13px 10px 17px 10px;
   width: 100%;
   background-color: rgb(245, 247, 246);
@@ -1108,6 +1105,13 @@
  
 .mailing_field {
   margin-bottom: 20px;
+  padding: 13px 10px 17px 10px;
+  width: 100%;
+  background-color: rgb(245, 247, 246);
+  border: none;
+  font-size: 13px;
+  color: rgb(117, 117, 117);
+  font-family: OpenSans-Regular, Arial, sans-serif;
 }
 
 .mailing_button {
@@ -1145,7 +1149,7 @@
 
 .topic_list {
  list-style-type: none;
- width: 100%;
+ max-width: 100%;
 }
 
 .topic_list_item{
@@ -1245,7 +1249,7 @@
 .product_footer{
    display: flex;
    align-items: flex-end;
-   justify-content: space-between;
+   /*justify-content: space-between;*/
    margin-top: 25px;
 }
 
@@ -1278,6 +1282,7 @@
   background-color: rgb(181, 159, 91);
   width: 141px;
   height: 49px;
+  justify-items: end;
 }
 
 
