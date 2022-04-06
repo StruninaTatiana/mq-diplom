@@ -1088,7 +1088,7 @@
  }
 
 .search-group {
-  width: calc(100% - 72px);
+  width: calc(100% - 73px);
   /*width: calc(100% - 48px);*/
  /*flex-grow: 1;*/
 }
@@ -1246,7 +1246,7 @@
   color: rgb(174, 158, 95);
 }
 
-.product_footer{
+.product_footer {
    display: flex;
    align-items: flex-end;
    /*justify-content: space-between;*/
